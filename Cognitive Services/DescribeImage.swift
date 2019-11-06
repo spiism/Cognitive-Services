@@ -2,7 +2,7 @@
 //  DescribeImage.swift
 //  Cognitive Services
 //
-//  Created by Hayden Do on 23/09/19.
+//  Created by Minh Van Ho on 05/11/19.
 //  Copyright © 2019 Unitec. All rights reserved.
 //
 
