@@ -17,6 +17,8 @@ class Cognitive_ServicesTests: XCTestCase {
     override func tearDown() {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
+    
+  
 
     func testExample() {
         // This is an example of a functional test case.
@@ -33,5 +35,18 @@ class Cognitive_ServicesTests: XCTestCase {
     func testForViewcontroller() {
             let _ = UIViewController()
           }
-
+    
+    func testNetwork(){
+        let URL = NSURL(string: "http://google.com/")!
+        let expectation = expectation(description: "GET \(URL)")
+        RestApiManager.sharedInstance.postLogin(testInfo) { (json, statusCode) in
+            XCTAssert(statusCode == 200, "statusCode is not matching the server data") // Here StatusCode is accessible inside the block
+            expectation.fulfill()
+        }//PostLogin call ends
+        waitForExpectations(timeout: 5){ error in
+            if let error = error {
+                print("Error: \(error.localizedDescription)")
+            }
+        }//Wait block end
+    }// end function
 }

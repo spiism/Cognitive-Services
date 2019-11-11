@@ -16,6 +16,8 @@
 		0C7611DF23385B3000386CD8 /* DescribeImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C7611DE23385B3000386CD8 /* DescribeImage.swift */; };
 		20CD99C12379EE4D001DA453 /* Translation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20CD99C02379EE4D001DA453 /* Translation.swift */; };
 		20CD99F72379FF14001DA453 /* Cognitive_ServicesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20CD99F62379FF14001DA453 /* Cognitive_ServicesTests.swift */; };
+		20CD99FF237A0230001DA453 /* TestNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20CD99FE237A0230001DA453 /* TestNetwork.swift */; };
+		20CD9A01237A02AB001DA453 /* API_test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20CD9A00237A02AB001DA453 /* API_test.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +44,8 @@
 		20CD99F42379FF14001DA453 /* Cognitive ServicesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Cognitive ServicesTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		20CD99F62379FF14001DA453 /* Cognitive_ServicesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cognitive_ServicesTests.swift; sourceTree = "<group>"; };
 		20CD99F82379FF14001DA453 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		20CD99FE237A0230001DA453 /* TestNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestNetwork.swift; sourceTree = "<group>"; };
+		20CD9A00237A02AB001DA453 /* API_test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API_test.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +105,8 @@
 			children = (
 				20CD99F62379FF14001DA453 /* Cognitive_ServicesTests.swift */,
 				20CD99F82379FF14001DA453 /* Info.plist */,
+				20CD99FE237A0230001DA453 /* TestNetwork.swift */,
+				20CD9A00237A02AB001DA453 /* API_test.swift */,
 			);
 			path = "Cognitive ServicesTests";
 			sourceTree = "<group>";
@@ -218,6 +224,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20CD99FF237A0230001DA453 /* TestNetwork.swift in Sources */,
+				20CD9A01237A02AB001DA453 /* API_test.swift in Sources */,
 				20CD99F72379FF14001DA453 /* Cognitive_ServicesTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
