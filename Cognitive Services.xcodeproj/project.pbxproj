@@ -14,7 +14,19 @@
 		0C7611D5233841B400386CD8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C7611D3233841B400386CD8 /* LaunchScreen.storyboard */; };
 		0C7611DD233842E700386CD8 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C7611DC233842E700386CD8 /* ImagePicker.swift */; };
 		0C7611DF23385B3000386CD8 /* DescribeImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C7611DE23385B3000386CD8 /* DescribeImage.swift */; };
+		20CD99C12379EE4D001DA453 /* Translation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20CD99C02379EE4D001DA453 /* Translation.swift */; };
+		20CD99F72379FF14001DA453 /* Cognitive_ServicesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20CD99F62379FF14001DA453 /* Cognitive_ServicesTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		20CD99F92379FF14001DA453 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0C7611BF233841B300386CD8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0C7611C6233841B300386CD8;
+			remoteInfo = "Cognitive Services";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		0C7611C7233841B300386CD8 /* Cognitive Services.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cognitive Services.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -26,10 +38,21 @@
 		0C7611D6233841B400386CD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0C7611DC233842E700386CD8 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		0C7611DE23385B3000386CD8 /* DescribeImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescribeImage.swift; sourceTree = "<group>"; };
+		20CD99C02379EE4D001DA453 /* Translation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Translation.swift; sourceTree = "<group>"; };
+		20CD99F42379FF14001DA453 /* Cognitive ServicesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Cognitive ServicesTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		20CD99F62379FF14001DA453 /* Cognitive_ServicesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cognitive_ServicesTests.swift; sourceTree = "<group>"; };
+		20CD99F82379FF14001DA453 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		0C7611C4233841B300386CD8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20CD99F12379FF13001DA453 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -43,6 +66,7 @@
 			isa = PBXGroup;
 			children = (
 				0C7611C9233841B300386CD8 /* Cognitive Services */,
+				20CD99F52379FF14001DA453 /* Cognitive ServicesTests */,
 				0C7611C8233841B300386CD8 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -51,6 +75,7 @@
 			isa = PBXGroup;
 			children = (
 				0C7611C7233841B300386CD8 /* Cognitive Services.app */,
+				20CD99F42379FF14001DA453 /* Cognitive ServicesTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -61,6 +86,7 @@
 				0C7611CA233841B300386CD8 /* AppDelegate.swift */,
 				0C7611CC233841B300386CD8 /* ViewController.swift */,
 				0C7611CE233841B300386CD8 /* Main.storyboard */,
+				20CD99C02379EE4D001DA453 /* Translation.swift */,
 				0C7611D1233841B400386CD8 /* Assets.xcassets */,
 				0C7611D3233841B400386CD8 /* LaunchScreen.storyboard */,
 				0C7611D6233841B400386CD8 /* Info.plist */,
@@ -68,6 +94,15 @@
 				0C7611DE23385B3000386CD8 /* DescribeImage.swift */,
 			);
 			path = "Cognitive Services";
+			sourceTree = "<group>";
+		};
+		20CD99F52379FF14001DA453 /* Cognitive ServicesTests */ = {
+			isa = PBXGroup;
+			children = (
+				20CD99F62379FF14001DA453 /* Cognitive_ServicesTests.swift */,
+				20CD99F82379FF14001DA453 /* Info.plist */,
+			);
+			path = "Cognitive ServicesTests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -90,18 +125,40 @@
 			productReference = 0C7611C7233841B300386CD8 /* Cognitive Services.app */;
 			productType = "com.apple.product-type.application";
 		};
+		20CD99F32379FF13001DA453 /* Cognitive ServicesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 20CD99FD2379FF14001DA453 /* Build configuration list for PBXNativeTarget "Cognitive ServicesTests" */;
+			buildPhases = (
+				20CD99F02379FF13001DA453 /* Sources */,
+				20CD99F12379FF13001DA453 /* Frameworks */,
+				20CD99F22379FF13001DA453 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				20CD99FA2379FF14001DA453 /* PBXTargetDependency */,
+			);
+			name = "Cognitive ServicesTests";
+			productName = "Cognitive ServicesTests";
+			productReference = 20CD99F42379FF14001DA453 /* Cognitive ServicesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		0C7611BF233841B300386CD8 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1030;
+				LastSwiftUpdateCheck = 1100;
 				LastUpgradeCheck = 1030;
 				ORGANIZATIONNAME = Unitec;
 				TargetAttributes = {
 					0C7611C6233841B300386CD8 = {
 						CreatedOnToolsVersion = 10.3;
+					};
+					20CD99F32379FF13001DA453 = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = 0C7611C6233841B300386CD8;
 					};
 				};
 			};
@@ -119,6 +176,7 @@
 			projectRoot = "";
 			targets = (
 				0C7611C6233841B300386CD8 /* Cognitive Services */,
+				20CD99F32379FF13001DA453 /* Cognitive ServicesTests */,
 			);
 		};
 /* End PBXProject section */
@@ -134,6 +192,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		20CD99F22379FF13001DA453 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -145,10 +210,27 @@
 				0C7611CD233841B300386CD8 /* ViewController.swift in Sources */,
 				0C7611DF23385B3000386CD8 /* DescribeImage.swift in Sources */,
 				0C7611CB233841B300386CD8 /* AppDelegate.swift in Sources */,
+				20CD99C12379EE4D001DA453 /* Translation.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20CD99F02379FF13001DA453 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20CD99F72379FF14001DA453 /* Cognitive_ServicesTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		20CD99FA2379FF14001DA453 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0C7611C6233841B300386CD8 /* Cognitive Services */;
+			targetProxy = 20CD99F92379FF14001DA453 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		0C7611CE233841B300386CD8 /* Main.storyboard */ = {
@@ -324,6 +406,46 @@
 			};
 			name = Release;
 		};
+		20CD99FB2379FF14001DA453 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Cognitive ServicesTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "unitec.ac.nz.Cognitive-ServicesTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Cognitive Services.app/Cognitive Services";
+			};
+			name = Debug;
+		};
+		20CD99FC2379FF14001DA453 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Cognitive ServicesTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "unitec.ac.nz.Cognitive-ServicesTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Cognitive Services.app/Cognitive Services";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -341,6 +463,15 @@
 			buildConfigurations = (
 				0C7611DA233841B400386CD8 /* Debug */,
 				0C7611DB233841B400386CD8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		20CD99FD2379FF14001DA453 /* Build configuration list for PBXNativeTarget "Cognitive ServicesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				20CD99FB2379FF14001DA453 /* Debug */,
+				20CD99FC2379FF14001DA453 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
